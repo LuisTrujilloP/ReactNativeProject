@@ -92,15 +92,16 @@ function calcularAreaCuadrado() {
 }
 
 
-function (l1, l2, b)
-{
-  if(lado1 === lado2 && lado1 != base){
-    alert('isoceles')
-    const altura = Math.sqrt(lado1**2 - base**2/ 4)
-    console.log(altura)
-  }else{
-    alert('no lo se')
-}
+function alturaTrianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeLadoBase) {
+  if (trianguloGrandeLadoA != trianguloGrandeLadoB) {
+      console.error("Los lados a y b no son iguales");
+  } else {
+      let trianguloPequenoLadoA; // PENDIENTE
+      const trianguloPequenoLadoB = trianguloGrandeLadoBase / 2;
+      const trianguloPequenoLadoBase = trianguloGrandeLadoA;
 
+      // ...
 
-
+      const trianguloGrandeAltura = trianguloPequenoLadoA;
+      return trianguloGrandeAltura;
+    }
