@@ -5,28 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header>
     <h1>
-      Figuras geométricas
+Precios y descuentos
     </h1>
-    <p>Este es el primer taller del curso práctico de JavaScript</p>
+    <p>Este es el primerata valo lo que quieres llevarScript</p>
   </header>
 
-  <section>
-    <h2>Calcula el área y perímetro de un cuadrado</h2>
-    <form>
-      <label for="InputCuadrado">
-        Escribe cuánto mide cada lado de tu cuadrado:
+  <section class="box">
+    <h2 class="box__header">Calcula el precio a pagar en tus productos con descuento de un cuadrado</h2>
+    <form class="box__form">
+      <label for="InputPrice">
+        Escribe el valor de lo que quieres llevar:
       </label>
-      <input id="InputCuadrado" type="number" />
-      <button type="button" onclick="calcularPerimetroCuadrado()">
-        Calcular el perímetro
+      <input id="InputPrice" type="number"/>
+
+      <label for="InputDiscount">
+        Escribe el descuento de lo que quieres llevar:
+      </label>
+      <input id="InputDiscount" type="number"/>
+
+      
+
+
+
+      <button type="button" onclick="onClickButtonDescuentoPrecio()">
+        Calcular el precio con descuento  
       </button>
-      <button type="button" onclick="calcularAreaCuadrado()">
-        Calcular el área
-      </button>
+      <p id="ResultP"> </p>
+     
     </form>
   </section>
 
